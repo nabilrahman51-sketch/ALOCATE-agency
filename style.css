@@ -1,0 +1,724 @@
+body {
+  margin: 0;
+  font-family: 'Inter', Arial, sans-serif;
+  background: #000;
+  color: #fff;
+}
+
+header {
+  background: #fff;
+  padding: 0 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 2px solid #2196f3;
+}
+
+nav {
+  display: flex;
+  gap: 32px;
+  align-items: center;
+}
+
+nav a {
+  color: #000;
+  text-decoration: none;
+  font-weight: 500;
+  padding: 16px 0;
+  transition: color 0.2s;
+}
+
+nav a:hover {
+  color: #2196f3;
+}
+
+.log-in-btn {
+  background: #000;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 8px 18px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.main-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 48px 40px;
+  min-height: 70vh;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.left-content {
+  max-width: 600px;
+}
+
+.left-content h1 {
+  font-size: 48px;
+  font-weight: 700;
+  margin-bottom: 0;
+  line-height: 1.1;
+}
+
+.left-content p {
+  font-size: 17px;
+  color: #ccc;
+  margin-top: 24px;
+  margin-bottom: 32px;
+}
+
+.contact-btn {
+  background: #fff;
+  color: #000;
+  border: none;
+  border-radius: 10px;
+  padding: 14px 32px;
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.contact-btn:hover {
+  background: #2196f3;
+  color: #fff;
+}
+
+.right-content {
+  text-align: center;
+}
+
+.logo-img {
+  width: 340px !important;
+  height: 340px !important;
+}
+
+.slogan {
+  color: #fff;
+  font-size: 18px;
+  margin-top: 32px;
+  font-style: italic;
+}
+
+/* About Us Section */
+.about-section {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 64px;
+  padding: 64px 0 0 0;
+  background: #000;
+  margin-left: 80px; /* Geser About Us ke kanan */
+}
+
+.about-left {
+  flex: 1;
+  max-width: 480px;
+  color: #fff;
+}
+
+.about-left h1 {
+  font-size: 40px;
+  margin-bottom: 24px;
+}
+
+.about-left p {
+  font-size: 20px;
+  margin-bottom: 32px;
+  line-height: 1.6;
+  text-align: justify; /* rata kiri-kanan */
+}
+
+.about-info {
+  margin-bottom: 18px;
+  font-size: 17px;
+  color: #fff;
+}
+
+.about-right {
+  flex: 1;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-end; /* geser ke kanan */
+}
+
+.about-photo {
+  width: 420px;
+  height: 420px;
+  object-fit: cover;
+  border-radius: 20px;
+  background: #222;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.2);
+}
+
+/* Filosofi Section */
+.filosofi-section {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 56px 24px 0 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.filosofi-logo-center {
+  display: block;
+  margin: 32px auto 16px auto;
+  width: 180px;      /* Perbesar ukuran logo */
+  height: 180px;     /* Perbesar ukuran logo */
+  object-fit: contain;
+}
+
+.filosofi-nama-center {
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.filosofi-brand {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.filosofi-agency {
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 1;
+}
+
+.filosofi-cols {
+  display: flex;
+  flex-direction: row;
+  gap: 56px;
+  width: 100%;
+  justify-content: center;
+}
+
+.filosofi-left,
+.filosofi-right {
+  flex: 1 1 0;
+  min-width: 340px;
+  font-size: 20px;
+  color: #fff;
+  line-height: 1.7;
+}
+
+.filosofi-title {
+  font-size: 42px;
+  font-weight: 700;
+  margin-bottom: 32px;
+  text-align: center;
+}
+
+.filosofi-desc {
+  margin-bottom: 32px;
+}
+
+.filosofi-points {
+  margin-top: 0;
+  padding-left: 18px;
+}
+
+.filosofi-points li {
+  margin-bottom: 14px;
+  list-style: none;
+  position: relative;
+}
+
+.filosofi-points li:before {
+  content: "•";
+  position: absolute;
+  left: -18px;
+  color: #fff;
+}
+
+/* Layanan Section */
+.layanan-section {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 56px 24px 0 24px;
+}
+
+.layanan-title {
+  font-size: 38px;
+  font-weight: 700;
+  margin-bottom: 40px;
+}
+
+.layanan-list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px;
+}
+
+.layanan-item {
+  background: none;
+  padding: 0;
+  border-radius: 0;
+  box-shadow: none;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.layanan-icon {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #fff;
+  background: #222;
+  border-radius: 50%;
+  width: 38px;
+  height: 38px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.layanan-item-title {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.layanan-item-desc {
+  font-size: 18px;
+  color: #ccc;
+  line-height: 1.5;
+}
+
+/* Insight Section */
+.insight-section {
+  padding: 56px 40px 0 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.insight-title {
+  font-size: 36px;
+  font-weight: 500;
+  margin-bottom: 32px;
+  margin-top: 48px;
+}
+
+.insight-desc {
+  font-size: 17px;
+  color: #ccc;
+  line-height: 1.7;
+  max-width: 900px;
+}
+
+/* Testimoni Section */
+.testimoni-section {
+  padding: 56px 40px 0 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.testimoni-title {
+  font-size: 38px;
+  font-weight: 700;
+  margin-bottom: 40px;
+}
+
+.testimoni-list {
+  display: flex;
+  gap: 32px;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  margin-bottom: 56px;
+}
+
+.testimoni-card {
+  background: #fff;
+  color: #000;
+  border-radius: 14px;
+  box-shadow: 0 2px 16px rgba(0,0,0,0.08);
+  padding: 32px 24px 24px 24px;
+  flex: 1 1 320px;
+  max-width: 340px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-width: 280px;
+}
+
+.testimoni-text {
+  font-size: 18px;
+  margin-bottom: 32px;
+  line-height: 1.6;
+}
+
+.testimoni-user {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.testimoni-avatar {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  object-fit: cover;
+  background: #eee;
+}
+
+.testimoni-user-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.testimoni-name {
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.testimoni-desc {
+  font-size: 13px;
+  color: #888;
+}
+
+/* Footer */
+.footer {
+  background: #fff;
+  color: #000;
+  padding: 40px 40px 32px 40px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 32px;
+  font-size: 16px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-col {
+  min-width: 180px;
+  margin-bottom: 16px;
+}
+
+.footer-title {
+  font-weight: 700;
+  margin-bottom: 16px;
+  font-size: 17px;
+}
+
+.footer-link {
+  color: #000;
+  text-decoration: none;
+  display: block;
+  margin-bottom: 8px;
+  font-size: 15px;
+  transition: color 0.2s;
+}
+
+.footer-link:hover {
+  color: #2196f3;
+}
+
+.footer-social {
+  display: none !important;
+}
+
+.footer-social-icon {
+  width: 22px;
+  height: 22px;
+  display: inline-block;
+  filter: grayscale(1);
+  opacity: 0.7;
+  transition: opacity 0.2s;
+}
+
+.footer-social-icon:hover {
+  opacity: 1;
+  filter: none;
+}
+
+.logo-img,
+.filosofi-logo-center,
+.footer-social-icon img {
+  width: 340px !important;
+  height: 340px !important;
+  object-fit: contain;
+}
+
+.logo-large {
+  width: 340px !important;
+  height: 340px !important;
+}
+
+.filosofi-nama-center,
+.right-content > div:not(.slogan) {
+  display: none !important;
+}
+
+/* Animasi Fade In Elegan untuk Setiap Elemen Utama */
+body > * {
+  opacity: 0;
+  transform: translateY(40px);
+  animation: fadeInUp 1s cubic-bezier(.4,0,.2,1) forwards;
+}
+
+header { animation-delay: 0.1s; }
+.main-section { animation-delay: 0.2s; }
+.about-section { animation-delay: 0.3s; }
+.filosofi-section { animation-delay: 0.4s; }
+.layanan-section { animation-delay: 0.5s; }
+.insight-section { animation-delay: 0.6s; }
+.testimoni-section { animation-delay: 0.7s; }
+footer { animation-delay: 0.8s; }
+
+/* Untuk child elemen agar animasi berurutan */
+.main-section > *:not(script),
+.about-section > *:not(script),
+.filosofi-section > *:not(script),
+.layanan-section > *:not(script),
+.insight-section > *:not(script),
+.testimoni-section > *:not(script),
+footer > *:not(script) {
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fadeInUp 0.8s cubic-bezier(.4,0,.2,1) forwards;
+  animation-delay: 1s;
+}
+
+.main-section > *:nth-child(1) { animation-delay: 0.25s; }
+.main-section > *:nth-child(2) { animation-delay: 0.35s; }
+.about-section > *:nth-child(1) { animation-delay: 0.4s; }
+.about-section > *:nth-child(2) { animation-delay: 0.5s; }
+/* Tambahkan sesuai kebutuhan untuk section lain */
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Animasi pada tombol */
+button,
+.contact-btn,
+.log-in-btn {
+  transition: transform 0.2s cubic-bezier(.4,0,.2,1), box-shadow 0.2s;
+}
+button:hover,
+.contact-btn:hover,
+.log-in-btn:hover {
+  transform: scale(1.07);
+  box-shadow: 0 8px 32px rgba(0,0,0,0.15);
+}
+
+/* Animasi pada logo */
+.logo-img,
+.filosofi-logo-center {
+  transition: transform 0.5s cubic-bezier(.4,0,.2,1), box-shadow 0.5s;
+}
+.logo-img:hover,
+.filosofi-logo-center:hover {
+  transform: scale(1.08) rotate(-2deg);
+  box-shadow: 0 8px 32px rgba(0,0,0,0.18);
+}
+
+/* Animasi pada card testimoni */
+.testimoni-card {
+  transition: box-shadow 0.3s, transform 0.3s;
+}
+.testimoni-card:hover {
+  box-shadow: 0 8px 32px rgba(0,0,0,0.18);
+  transform: translateY(-8px) scale(1.03);
+}
+
+/* Interaktif saat kena kursor untuk SEMUA ELEMEN UTAMA */
+header,
+nav a,
+.log-in-btn,
+.contact-btn,
+.left-content h1,
+.left-content p,
+.right-content .slogan,
+.logo-img,
+.about-section,
+.about-left h1,
+.about-left p,
+.about-info,
+.about-photo,
+.filosofi-section,
+.filosofi-title,
+.filosofi-logo-center,
+.layanan-section,
+.layanan-title,
+.layanan-item,
+.layanan-icon,
+.layanan-item-title,
+.layanan-item-desc,
+.insight-section,
+.insight-title,
+.insight-desc,
+.testimoni-section,
+.testimoni-title,
+.testimoni-card,
+.testimoni-text,
+.testimoni-user,
+.testimoni-avatar,
+.testimoni-user-info,
+.testimoni-name,
+.testimoni-desc,
+.footer,
+.footer-col,
+.footer-title,
+.footer-link {
+  transition: 
+    transform 0.25s cubic-bezier(.4,0,.2,1),
+    box-shadow 0.25s cubic-bezier(.4,0,.2,1),
+    background 0.25s,
+    color 0.25s;
+  cursor: pointer;
+}
+
+/* Efek interaktif saat hover */
+header:hover,
+nav a:hover,
+.log-in-btn:hover,
+.contact-btn:hover,
+.left-content h1:hover,
+.left-content p:hover,
+.right-content .slogan:hover,
+.logo-img:hover,
+.about-section:hover,
+.about-left h1:hover,
+.about-left p:hover,
+.about-info:hover,
+.about-photo:hover,
+.filosofi-section:hover,
+.filosofi-title:hover,
+.filosofi-logo-center:hover,
+.layanan-section:hover,
+.layanan-title:hover,
+.layanan-item:hover,
+.layanan-icon:hover,
+.layanan-item-title:hover,
+.layanan-item-desc:hover,
+.insight-section:hover,
+.insight-title:hover,
+.insight-desc:hover,
+.testimoni-section:hover,
+.testimoni-title:hover,
+.testimoni-card:hover,
+.testimoni-text:hover,
+.testimoni-user:hover,
+.testimoni-avatar:hover,
+.testimoni-user-info:hover,
+.testimoni-name:hover,
+.testimoni-desc:hover,
+.footer:hover,
+.footer-col:hover,
+.footer-title:hover,
+.footer-link:hover {
+  transform: scale(1.04) translateY(-4px);
+  box-shadow: 0 8px 32px rgba(0,0,0,0.12);
+  background: rgba(255,255,255,0.04);
+  color: #ffd700;
+}
+
+/* Untuk gambar/logo lebih menonjol saat hover */
+.logo-img:hover,
+.filosofi-logo-center:hover,
+.about-photo:hover {
+  transform: scale(1.08) rotate(-2deg);
+  box-shadow: 0 12px 40px rgba(0,0,0,0.18);
+  background: rgba(255,255,255,0.08);
+}
+
+/* Untuk tombol lebih menonjol */
+button:hover,
+.contact-btn:hover,
+.log-in-btn:hover {
+  background: #ffd700;
+  color: #222;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.18);
+  transform: scale(1.08);
+}
+
+/* Untuk link di footer */
+.footer-link:hover {
+  color: #ffd700;
+  text-decoration: underline;
+  background: none;
+  box-shadow: none;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .about-section {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 32px;
+  }
+  .about-right img {
+    width: 100%;
+    max-width: 370px;
+  }
+  .filosofi-section {
+    flex-direction: column;
+    gap: 32px;
+    padding: 32px 8px 0 8px;
+  }
+  .filosofi-left, .filosofi-right {
+    min-width: 0;
+    width: 100%;
+  }
+  .filosofi-logo-nama {
+    justify-content: center;
+  }
+  .filosofi-nama-wrap {
+    align-items: center;
+  }
+  .filosofi-points {
+    max-width: 100%;
+  }
+  .layanan-list {
+    flex-direction: column;
+    gap: 32px;
+  }
+  .layanan-section, .insight-section {
+    padding: 32px 16px 0 16px;
+  }
+  .insight-title {
+    font-size: 28px;
+  }
+  .testimoni-list {
+    flex-direction: column;
+    gap: 24px;
+  }
+  .footer {
+    flex-direction: column;
+    gap: 0;
+    padding: 32px 16px 24px 16px;
+  }
+}
+@media (max-width: 1100px) {
+  .layanan-list {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 32px;
+  }
+}
+@media (max-width: 700px) {
+  .layanan-list {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+  .layanan-section {
+    padding: 32px 8px 0 8px;
+  }
+  .layanan-title {
+    font-size: 28px;
+  }
+  .layanan-item-title {
+    font-size: 20px;
+  }
+  .layanan-item-desc {
+    font-size: 16px;
+  }
+}
